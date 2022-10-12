@@ -1,0 +1,31 @@
+.divider-container{
+    margin-bottom: 5%;
+}
+.divider-col-space{
+    background-image: url('https://iaterial.sirv.com/minting%20site/64-646905_white-flare-line-png-transparent-png.png');
+    background-size: 100% 100%; 
+    height: .1em;
+    margin-top: .8em !important;
+}
+.divider-col-img{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.divider-sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.divider-icon{
+    color: #fff;
+    margin-top: .5em;
+    font-weight: bold;
+    font-size: .8em;
+}
+.divider-square-container{
+    margin-top: .5em;
+    padding-left: 30%;
+    padding-right: 30%;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}

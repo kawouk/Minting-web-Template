@@ -1,0 +1,58 @@
+.minting-col-content{
+    padding-right: 6% !important;
+}
+.minting-title{
+    color: #fff;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    position: relative;
+    width: fit-content;
+}
+.minting-title::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+.minting-description{
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+.mint-btn{
+    padding: 1em;
+    width: 50%;
+    z-index: 0;
+}
+.minting-exp-col-img{
+    padding: 0% 5% 5% 5%;
+
+}
+.minting-exp-container{
+    border: 1px solid #fff;
+    padding: 18% 1% 18% 18%;
+    border-radius: 10px;
+    position: relative;
+}
+.minting-exp-container::before{
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    height: 85%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: .1;
+}
+.minting-exp-step-heading{
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0.2px 0px 2px #cc00ff;
+}
+.minting-exp-description{
+    color: #fff;
+}

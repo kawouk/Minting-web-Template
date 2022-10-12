@@ -1,0 +1,106 @@
+
+.nav-bar{
+    background-color: transparent;
+    padding: 1% !important;
+    z-index: 1;
+}
+.nav-bar::before{
+    content:'';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 90deg, #1b121d 0, #120f2f 50% , #1b121d 100%);
+    transform: translateY(var(--navAfterTrans));
+    transition: all 0.2s ease-in-out;
+}
+.nav-brand{
+    color: #ffffff !important;
+    cursor: pointer;
+}
+.nav-item-container{
+    padding-left: 8% !important;
+}
+.nav-item{
+    color: #ffffff !important;
+    transition: all 0.3s ease-in-out !important;
+    font-weight: bold !important;
+    position: relative !important;
+}
+.nav-item::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #cc00ff;
+    transition: all 0.2s ease-in-out;
+}
+.nav-item:hover{
+    color: #cc00ff !important;
+}
+.nav-item:hover::before{
+    width: 100%;
+}
+.nav-wallet{
+    --border-width: 3px;
+    text-align: center;
+    color: #fff ;
+    font-weight: bold;
+    padding-top: .5% ;
+    padding-bottom: .5% ;
+    padding-left: 2% ;
+    padding-right: 2% ;
+    border-radius: var(--border-width);
+    position: relative;
+    background: #120f2f;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.nav-wallet:hover{
+    transform: translateY(-5%);
+}
+
+.nav-wallet::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      #cc00ff,
+      #7000FF
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.navbar-toggler:focus{
+    color: transparent !important;
+}
+.navbar-toggler{
+    color: transparent !important;
+}
+.navbar-toggler-icon{
+    background-image: url('https://iaterial.sirv.com/egety-maze-mark/1200px-Hamburger_icon_white.svg.png') !important;
+} 
+@media screen and (max-width:991px){
+    .nav-bar{
+        background-image: linear-gradient( 90deg, #1b121d 0, #120f2f 50% , #1b121d 100%);
+    }
+}

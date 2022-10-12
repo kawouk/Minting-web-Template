@@ -1,0 +1,61 @@
+.nft-slider{
+    padding-bottom: 3% !important;
+}
+.nft-list{
+ display: flex;
+ flex-direction: row !important;
+ justify-content: space-around !important;
+ list-style: none;
+ padding: 5%;
+}
+.nft-list-item img{
+    width: 100%;
+    padding-bottom: 15%;
+}
+.not-active{
+    display: none;
+    transform: translateX(100%);
+}
+.swiper-button-prev{
+    position: absolute;
+    top: 95%;
+    left: 35%;
+    z-index: 1;
+    color: white!important;
+
+}
+.swiper-button-next{
+    position: absolute;
+    top: 95%;
+    right: 35%;
+    z-index: 1;
+    color: white !important;
+}
+.swiper-pagination-bullet-active{
+    background: #fff !important;
+}
+.nft-slider-phone{
+    display: none;
+}
+@media screen and (max-width:992px){
+    .swiper-button-prev{
+        top: 90%;
+    }
+    .swiper-button-next{
+        top: 90%;
+    }
+}
+@media screen and (max-width:576px){
+    .nft-slider-phone{
+        display: block;
+    }
+    .nft-slider{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+}

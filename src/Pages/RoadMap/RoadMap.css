@@ -1,0 +1,12 @@
+.roadmap-container{
+    padding-top: 5%;
+}
+.roadmap-title{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #cc00ff;
+}
+.roadmap-road-slider{
+    margin-top: 2% !important;
+}

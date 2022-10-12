@@ -1,0 +1,44 @@
+.minting-collection-img-col{
+    background-image: url('https://iaterial.sirv.com/egety-maze-mark/device_presentation_tablet_restaurant.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+
+}
+.minting-collection-content-col{
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.minting-content-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 40%;
+}
+.minting-nav-title{
+    color: #fff;
+}
+.minting-link{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.minting-link:hover{
+    color: #cc00ff;
+}
+.minting-navigation-span{
+    color: #fff;
+    font-weight: bold;
+    margin-top: -1%;
+}
+.minting-nft-title{
+    color: #fff;
+    text-shadow: 0.2px 1px 2px #cc00ff !important;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.minting-nft-description{
+    color: #fff;
+    font-size: 1.2em;
+    padding-bottom: 2%;
+}

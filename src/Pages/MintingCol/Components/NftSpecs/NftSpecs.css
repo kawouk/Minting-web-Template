@@ -1,0 +1,134 @@
+.nft-specs-user-col{
+    padding: 5% 5% 5% 3%;
+    border: 1px solid #fff;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.nft-user-heading{
+    color: #fff;
+    margin-bottom: 5%;
+    padding: 2% ;
+    z-index: 1;
+    position: relative;
+    width: fit-content;
+}
+.nft-user-heading::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: -22%;
+    height: 100%;
+    width: 142%;
+    clip-path: polygon(90% 0, 100% 100%, 0 100%, 0 0);
+    background-color: rgb(18, 187, 18);
+}
+.nft-spec-sub-title{
+    color: #fff;
+    font-size: 1em;
+    opacity: .5;
+}
+.nft-spec-number-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 5%;
+}
+.nft-spec-number-container::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 98%;
+    height: 1px;
+    background-color: #fff;
+    opacity: .1;
+}
+.nft-spec-number-container::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #cc00ff;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+.nft-spec-number-container:hover::before{
+    width: 98%;
+}
+
+.nft-spec-number{
+    color: #fff;
+}
+.nft-spec-btn{
+    color: white;
+    padding: 0 !important;
+    background-color: transparent;
+    border: transparent !important;
+    font-size: 1.5em ;
+    display: none;
+}
+#minus-btn-2{
+    display: block ;
+    padding-right: 5% !important;
+}
+#plus-btn-2{
+    display: block ;
+    padding-left: 5% !important;
+}
+#minus-btn-2:focus{
+    color: #cc00ff;
+}
+#plus-btn-2:focus{
+    color: #cc00ff;
+}
+.mint-btn{
+    --border-width: 3px;
+    width: 25%;
+    text-align: center;
+    color: #fff ;
+    font-weight: bold;
+    padding-top: 1.5% ;
+    padding-bottom: 1.5% ;
+    padding-left: 2% ;
+    padding-right: 2% ;
+    border-radius: var(--border-width);
+    position: relative;
+    background: #120f2f;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.mint-btn:hover{
+    transform: translateY(-5%);
+}
+
+.mint-btn::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      #cc00ff,
+      #7000FF
+    );
+    background-size: 100% 100%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.mint-now{
+    margin-top: 5%;
+}
